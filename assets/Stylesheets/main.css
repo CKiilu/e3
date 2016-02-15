@@ -66,14 +66,47 @@ women {
 }
 .image {
     background-color: #F5F4F7;
+    position: relative;
+    padding-left: 6%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.image img {
+    height: 200px;
 }
 .image:hover {
     border: solid 5px #A89D73;
 }
+.bot,
+.top {
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+}
+.top {
+    top: 0;
+}
+.bot {
+    bottom: 0;
+    display: inline-block;
+}
+.bot .sp-left {
+    color: #C1B89F;
+    margin-right: 10px;
+}
+.sp-left {
+    width: 70%;
+}
+.sp-right {
+    width: 20%;
+}
 ============================
 /*About section*/
 
-#about {}
+#about {
+    clear: both;
+}
 .more {
     background-image: url(../backgrounds/about.jpg);
     background-size: cover;
